@@ -1,0 +1,4 @@
+pyinstaller>=6.0,<7.0
+customtkinter>=5.2.0
+pillow>=10.0.0
+ezdxf>=1.4.4,<2.0

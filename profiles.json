@@ -1,0 +1,7 @@
+{
+  "_comment": [
+    "Legacy compatibility file; machine libraries start empty.",
+    "Records are created only by Save SIDE or Save Selected Machining."
+  ],
+  "profiles": {}
+}

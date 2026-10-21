@@ -1,0 +1,273 @@
+{
+    "_comment": [
+        "Omega CNC Processor \u2014 Tool Library (v1.3 typed schema).",
+        "Tools are stored per machine (manufacturer | model).",
+        "Edit via the Tool Library in the application \u2014 the editor shows",
+        "the type-specific field grid for each tool.",
+        "Tool codes are free-form strings (any alphanumeric, no T-prefix",
+        "required); the code is rendered verbatim into the machine output.",
+        "Type tokens: DRILL, STEP_DRILL, END_MILL, MILL_CUTTER,",
+        "HORIZONTAL_BLADE, VERTICAL_BLADE, T_SLOT_BLADE, TAP, DISABLED.",
+        "Legacy v1.2 entries (type=mill/drill/step_drill/saw/tap/disabled)",
+        "are auto-migrated on load \u2014 no manual conversion needed."
+    ],
+    "machines": {
+        "Mecal | MC305 Kosmos": {
+            "tools": {
+                "3": {
+                    "type": "END_MILL",
+                    "code": "3",
+                    "description": "3mm End Mill (MTL-ACL-Cutter 3.0)",
+                    "fields": {
+                        "shank_dia": 8.0,
+                        "cutter_dia": 3.0,
+                        "cutter_height": 15.0,
+                        "max_step_milling": 3.0,
+                        "max_step_drilling": 15.0,
+                        "length_under_holder": 50.0
+                    }
+                },
+                "4": {
+                    "type": "END_MILL",
+                    "code": "4",
+                    "description": "4mm End Mill (63-918)",
+                    "fields": {
+                        "shank_dia": 4.0,
+                        "cutter_dia": 4.0,
+                        "cutter_height": 20.0,
+                        "max_step_milling": 3.0,
+                        "max_step_drilling": 40.0,
+                        "length_under_holder": 40.0
+                    }
+                },
+                "5": {
+                    "type": "HORIZONTAL_BLADE",
+                    "code": "5",
+                    "description": "Blade 200mm \u2014 RESERVED for saw / notch",
+                    "fields": {
+                        "blade_dia": 200.0,
+                        "blade_thick": 6.0,
+                        "h_cut_limit": 75.0,
+                        "v_cut_limit": 120.0
+                    }
+                },
+                "11": {
+                    "type": "DISABLED",
+                    "code": "11",
+                    "description": "DO NOT USE",
+                    "fields": {}
+                },
+                "22": {
+                    "type": "STEP_DRILL",
+                    "code": "22",
+                    "description": "4.7/8.5 Step Drill (T22)",
+                    "fields": {
+                        "outer_dia": 8.5,
+                        "inner_dia": 4.7,
+                        "step_height": 15.0,
+                        "length_under_holder": 100.0
+                    }
+                },
+                "23": {
+                    "type": "STEP_DRILL",
+                    "code": "23",
+                    "description": "5.0/9.5 Step Drill (T23)",
+                    "fields": {
+                        "outer_dia": 9.5,
+                        "inner_dia": 5.0,
+                        "step_height": 15.0,
+                        "length_under_holder": 100.0
+                    }
+                },
+                "45": {
+                    "type": "STEP_DRILL",
+                    "code": "45",
+                    "description": "4.5/8.5 Step Drill (T45)",
+                    "fields": {
+                        "outer_dia": 8.5,
+                        "inner_dia": 4.5,
+                        "step_height": 15.0,
+                        "length_under_holder": 100.0
+                    }
+                },
+                "50": {
+                    "type": "END_MILL",
+                    "code": "50",
+                    "description": "5mm End Mill (MTL-ACL-Cutter 5.0)",
+                    "fields": {
+                        "shank_dia": 8.0,
+                        "cutter_dia": 5.0,
+                        "cutter_height": 15.0,
+                        "max_step_milling": 3.0,
+                        "max_step_drilling": 15.0,
+                        "length_under_holder": 60.0
+                    }
+                },
+                "54": {
+                    "type": "END_MILL",
+                    "code": "54",
+                    "description": "3mm End Mill \u2014 second holder (MTL-ACL-Cutter 3.0)",
+                    "fields": {
+                        "shank_dia": 8.0,
+                        "cutter_dia": 3.0,
+                        "cutter_height": 15.0,
+                        "max_step_milling": 3.0,
+                        "max_step_drilling": 15.0,
+                        "length_under_holder": 60.0
+                    }
+                },
+                "63": {
+                    "type": "END_MILL",
+                    "code": "63",
+                    "description": "6.3mm Mill Cutter (63-624)",
+                    "fields": {
+                        "shank_dia": 6.3,
+                        "cutter_dia": 6.3,
+                        "cutter_height": 20.0,
+                        "max_step_milling": 3.0,
+                        "max_step_drilling": 50.0,
+                        "length_under_holder": 50.0
+                    }
+                },
+                "67": {
+                    "type": "DRILL",
+                    "code": "67",
+                    "description": "3.5mm HSS Drill",
+                    "fields": {
+                        "drill_diameter": 3.5,
+                        "length_under_holder": 50.0
+                    }
+                },
+                "82": {
+                    "type": "END_MILL",
+                    "code": "82",
+                    "description": "9.5mm Mill Cutter (63-627)",
+                    "fields": {
+                        "shank_dia": 9.5,
+                        "cutter_dia": 9.5,
+                        "cutter_height": 30.0,
+                        "max_step_milling": 3.0,
+                        "max_step_drilling": 70.0,
+                        "length_under_holder": 70.0
+                    }
+                },
+                "83": {
+                    "type": "END_MILL",
+                    "code": "83",
+                    "description": "10mm Mill Cutter (63-628)",
+                    "fields": {
+                        "shank_dia": 10.0,
+                        "cutter_dia": 10.0,
+                        "cutter_height": 30.0,
+                        "max_step_milling": 3.0,
+                        "max_step_drilling": 80.0,
+                        "length_under_holder": 80.0
+                    }
+                },
+                "86": {
+                    "type": "STEP_DRILL",
+                    "code": "86",
+                    "description": "3.5/6mm Step Drill (T67 countersink)",
+                    "fields": {
+                        "outer_dia": 6.0,
+                        "inner_dia": 3.5,
+                        "step_height": 15.0,
+                        "length_under_holder": 50.0
+                    }
+                },
+                "91": {
+                    "type": "T_SLOT_BLADE",
+                    "code": "91",
+                    "description": "T-Slot Cutter 28.5mm / 8mm shank (20-64086)",
+                    "fields": {
+                        "blade_dia": 28.5,
+                        "blade_thick": 6.0,
+                        "shank_dia": 8.0,
+                        "length_under_holder_to_underside": 60.0
+                    }
+                }
+            }
+        },
+        "Fenstek | FX5": {
+            "tools": {}
+        },
+        "FOM | FMC 370": {
+            "tools": {
+                "T2": {
+                    "type": "HORIZONTAL_BLADE",
+                    "code": "T2",
+                    "description": "Horizontal Blade D250",
+                    "fields": {
+                        "blade_dia": 70.0,
+                        "blade_thick": 3
+                    }
+                },
+                "T4": {
+                    "type": "END_MILL",
+                    "code": "T4",
+                    "description": "Mill 10mm",
+                    "fields": {
+                        "cutter_dia": 10.0
+                    }
+                },
+                "T1": {
+                    "type": "END_MILL",
+                    "code": "T1",
+                    "description": "6mm Mill/8mm Shank",
+                    "fields": {
+                        "cutter_dia": 6.0
+                    }
+                },
+                "T6": {
+                    "type": "END_MILL",
+                    "code": "T6",
+                    "description": "4mm Mill",
+                    "fields": {
+                        "cutter_dia": 4.0
+                    }
+                },
+                "T9": {
+                    "type": "DRILL",
+                    "code": "T9",
+                    "description": "3.5mm Drill",
+                    "fields": {
+                        "drill_diameter": 3.5
+                    }
+                },
+                "T3": {
+                    "type": "END_MILL",
+                    "code": "T3",
+                    "description": "8mm Milling",
+                    "fields": {
+                        "cutter_dia": 8.0
+                    }
+                },
+                "T5": {
+                    "type": "STEP_DRILL",
+                    "code": "T5",
+                    "description": "9.5mm Step Drill",
+                    "fields": {
+                        "outer_dia": 9.5,
+                        "inner_dia": 4.8
+                    }
+                }
+            }
+        },
+        "Mecal | MC305 Gianos": {
+            "tools": {}
+        },
+        "FOM | FMC 340": {
+            "tools": {}
+        },
+        "Pertici | P104": {
+            "_comment": [
+                "Pertici tool codes are free-form name strings that must",
+                "match an entry in the Pertici operator tool library on the",
+                "machine (e.g. \"Mill 8L\", \"Drill 2.77\", \"Saw120\").",
+                "Type the exact tool name into the code field; the Pertici",
+                "transformer emits it verbatim as WToolID."
+            ],
+            "tools": {}
+        }
+    }
+}
